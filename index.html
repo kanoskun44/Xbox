@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./picture/xbox.png" type="image/x-icon">
+
+    <title>Xbox</title>
+</head>
+<body>
+ <!-- Loader -->
+ <div class="smart-glass" id="loader">
+    <h1>Xbox</h1>
+    <div class="logo1">
+        <div class="circle">
+            <div class="circle">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="hold-x">
+            <div class="xbox"></div>
+        </div>
+    </div>
+    <div class="loading-text">Loading...</div>
+</div> 
+    <audio id="loaderAudio" src="./audio/First-Look Xbox Series X Gameplay on Inside Xbox.mp3"></audio>
+
+         <!-- Contenido principal (oculto inicialmente) -->
+    <div id="main-content" class="hidden">
+        
+     <!-- Menú vertical -->
+        <nav class="navbar">
+            <div class="logo">Xbox</div>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Game Pass</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 1</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 2</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 3</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 4</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 5</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 6</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Juegos</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 1</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 2</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 3</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 4</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 5</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 6</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 7</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 8</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Juego 9</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Dispositivos</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 1</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 2</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 3</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 4</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 5</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 6</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 7</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 8</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 9</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 10</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Dispositivo 11</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tienda</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-link">Producto 1</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Producto 2</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Producto 3</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Producto 4</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Producto 5</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Comunidad</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 1</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 2</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 3</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 4</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 5</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 6</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 7</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 8</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 9</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 10</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 11</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 12</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Foro 13</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="blur-overlay"></div>
+        </nav>
+    
+        <div class="main-content">
+        <section>
+            <div class="xbox-slider">
+                <div class="slider-container">
+                    <!-- Slide 1 (Video) -->
+                    <div class="slide">
+                        <video autoplay loop muted>
+                            <source src="./picture/shoping_cart.png" type="video/mp4">
+                        </video>
+                        <button class="mute-btn">
+                            <i class="fas fa-volume-mute"></i>
+                        </button>
+                        <div class="slide-content">
+                            <h2 class="slide-title">NUEVO JUEGO</h2>
+                            <p class="slide-description">Descubre la última aventura exclusiva de Xbox con gráficos de última generación y una historia épica.</p>
+                            <a href="#" class="info-btn" data-modal="modal1">Más información</a>
+                        </div>
+                    </div>
+        
+                    <!-- Slide 2 (Imagen) -->
+                    <div class="slide">
+                        <img src="./picture/1110059-assassin-s-creed-shadows-se-devoile-dans-une-nouvelle-bande-annonce.jpg" alt="Xbox Series X">
+                        <div class="slide-content">
+                            <h2 class="slide-title">XBOX SERIES X</h2>
+                            <p class="slide-description">La consola más potente de la nueva generación con velocidad, rendimiento y compatibilidad.</p>
+                            <a href="#" class="info-btn" data-modal="modal2">Más información</a>
+                        </div>
+                    </div>
+        
+                    <!-- Slide 3 (Video) -->
+                    <div class="slide">
+                        <video autoplay loop muted>
+                            <source src="./Video/Forza Horizon 5 Official Announce Trailer..mp4" type="video/mp4">
+                        </video>
+                        <button class="mute-btn">
+                            <i class="fas fa-volume-mute"></i>
+                        </button>
+                        <div class="slide-content">
+                            <h2 class="slide-title">GAME PASS</h2>
+                            <p class="slide-description">Accede a cientos de juegos de alta calidad con Xbox Game Pass, el mejor servicio de suscripción.</p>
+                            <a href="#" class="info-btn" data-modal="modal3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="slider-nav">
+                    <div class="nav-dot active" data-slide="0"></div>
+                    <div class="nav-dot" data-slide="1"></div>
+                    <div class="nav-dot" data-slide="2"></div>
+                </div>
+        
+                <div class="slider-arrow left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-arrow right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        
+            <!-- Modales de información -->
+            <div class="info-modal" id="modal1">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2 class="modal-title">NUEVO JUEGO</h2>
+                    <p class="modal-text">Este emocionante nuevo título exclusivo de Xbox ofrece una experiencia de juego revolucionaria con gráficos de última generación, una historia envolvente y mecánicas de juego innovadoras.</p>
+                    <p class="modal-text">Características principales:</p>
+                    <ul class="modal-text">
+                        <li>Mundo abierto masivo con detalles increíbles</li>
+                        <li>Historia no lineal con múltiples finales</li>
+                        <li>Sistema de combate fluido y dinámico</li>
+                        <li>Compatibilidad con 4K a 60fps</li>
+                        <li>Modo multijugador cooperativo</li>
+                    </ul>
+                    <p class="modal-text">Disponible ahora en Xbox Series X|S y PC.</p>
+                </div>
+            </div>
+        
+            <div class="info-modal" id="modal2">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2 class="modal-title">XBOX SERIES X</h2>
+                    <p class="modal-text">La Xbox Series X es la consola más potente de Microsoft, diseñada para ofrecer el mejor rendimiento en la nueva generación de videojuegos.</p>
+                    <p class="modal-text">Especificaciones técnicas:</p>
+                    <ul class="modal-text">
+                        <li>Procesador: CPU Zen 2 personalizada de 8 núcleos a 3.8 GHz</li>
+                        <li>GPU: 12 TFLOPS, 52 CUs a 1.825 GHz</li>
+                        <li>Memoria: 16 GB GDDR6</li>
+                        <li>Almacenamiento: SSD NVMe personalizado de 1TB</li>
+                        <li>Resolución: Hasta 8K</li>
+                        <li>Tasa de fotogramas: Hasta 120 FPS</li>
+                    </ul>
+                    <p class="modal-text">Incluye control inalámbrico Xbox con tecnología haptic feedback.</p>
+                </div>
+            </div>
+        
+            <div class="info-modal" id="modal3">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h2 class="modal-title">XBOX GAME PASS</h2>
+                    <p class="modal-text">Xbox Game Pass es el servicio de suscripción de juegos que te da acceso a una biblioteca en constante cambio con más de 100 juegos de alta calidad.</p>
+                    <p class="modal-text">Beneficios:</p>
+                    <ul class="modal-text">
+                        <li>Juegos de Xbox Game Studios el mismo día de su lanzamiento</li>
+                        <li>Descuentos exclusivos para miembros</li>
+                        <li>Juegos para PC incluidos con Game Pass Ultimate</li>
+                        <li>EA Play incluido con Game Pass Ultimate</li>
+                        <li>Juegos en la nube con Game Pass Ultimate</li>
+                    </ul>
+                    <p class="modal-text">Suscríbete ahora y obtén tu primer mes por solo $1.</p>
+                </div>
+            </div>
+
+            <!-- Sección de contenido icons -->
+
+          
+        
+        </section>
+
+        <section>
+            <h1>Redes sociales </h1>
+
+
+        <div class="container">
+            <div class="social-icon">
+                <i class="fab fa-facebook-f icon"></i>
+                <span class="social-name">Facebook</span>
+            </div>
+            <div class="social-icon">
+                <i class="fab fa-twitter icon"></i>
+                <span class="social-name">Twitter</span>
+            </div>
+            <div class="social-icon">
+                <i class="fab fa-instagram icon"></i>
+                <span class="social-name">Instagram</span>
+            </div>
+            <div class="social-icon">
+                <i class="fab fa-codepen icon"></i>
+                <span class="social-name">Codepen</span>
+            </div>
+            <div class="social-icon">
+                <i class="fab fa-youtube icon"></i>
+                <span class="social-name">YouTube</span>
+            </div>
+            <div class="blur-effect"></div>
+        </div>
+
+    </section>
+
+    <!-- Sección de contenido de la tienda y Mando -->
+     <section>
+        <h1>Mando y tienda</h1>
+    <div class="controller-container">
+        <img src="./picture/mando xbox2.jpg" 
+             alt="Xbox Series X Controller" 
+             class="xbox-controller" 
+             id="controller">
+        <div class="xbox-button" id="menuButton">X</div>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="xbox-menu">
+            <button class="menu-close" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="menu-title">Xbox Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="menu-icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="menu-label">Game Pass</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon"><i class="fas fa-dice"></i></div>
+                    <div class="menu-label">Juegos</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon"><i class="fas fa-tv"></i></div>
+                    <div class="menu-label">Consolas</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon"><i class="fas fa-headset"></i></div>
+                    <div class="menu-label">Accesorios</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon"><i class="fas fa-tag"></i></div>
+                    <div class="menu-label">Ofertas</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon"><i class="fas fa-user"></i></div>
+                    <div class="menu-label">Iniciar Sesión</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de contenido  -->
+     <h1>Menu de tienda y atajos rapidos</h1>
+     <p>Aqui podras mover con el teclado e ingresar mas rapido a atajos de la pagina</p>
+    <section>
+        <div class="dashboard" id="dashboard">
+            <!-- Tile 1 -->
+            <div class="tile tile-1" tabindex="0">
+                <img src="./picture/My-games-and-apps-2020.webp" alt="My Games" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">My Games</h3>
+                        <p class="tile-subtitle">Tus juegos recientes</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Abrir</button>
+                        <button class="tile-button">Administrar</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 2 -->
+            <div class="tile tile-2" tabindex="0">
+                <img src="./picture/store_xbox.webp" alt="Store" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Store</h3>
+                        <p class="tile-subtitle">Explora nuevos juegos</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Ver ofertas</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 3 -->
+            <div class="tile tile-3" tabindex="0">
+                <img src="./picture/game pass.jpg" alt="Game Pass" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Game Pass</h3>
+                        <p class="tile-subtitle">Más de 100 juegos</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Explorar</button>
+                        <button class="tile-button">Unirse</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 4 -->
+            <div class="tile tile-4" tabindex="0">
+                <img src="./picture/Chat.png" alt="Social" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Social</h3>
+                        <p class="tile-subtitle">Amigos y comunidad</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Amigos</button>
+                        <button class="tile-button">Mensajes</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 5 -->
+            <div class="tile tile-1" tabindex="0">
+                <img src="./picture/settings.png" alt="Settings" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Settings</h3>
+                        <p class="tile-subtitle">Configuración del sistema</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Abrir</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 6 -->
+            <div class="tile tile-2" tabindex="0">
+                <img src="./picture/media.png" alt="Media" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Media</h3>
+                        <p class="tile-subtitle">Películas y música</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Reproductores</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 7 -->
+            <div class="tile tile-3" tabindex="0">
+                <img src="./picture/Archivement.png" alt="Achievements" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Achievements</h3>
+                        <p class="tile-subtitle">Tus logros</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Ver</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 8 -->
+            <div class="tile tile-4" tabindex="0">
+                <img src="./picture/party.png" alt="Party" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Party</h3>
+                        <p class="tile-subtitle">Chat con amigos</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Crear</button>
+                        <button class="tile-button">Unirse</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 9 -->
+            <div class="tile tile-1" tabindex="0">
+                <img src="./picture/club.png" alt="Clubs" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Clubs</h3>
+                        <p class="tile-subtitle">Comunidades de juego</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Explorar</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 10 -->
+            <div class="tile tile-2" tabindex="0">
+                <img src="./picture/game_dvr.png" alt="Game DVR" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Game DVR</h3>
+                        <p class="tile-subtitle">Capturas y grabaciones</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Ver</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 11 -->
+            <div class="tile tile-3" tabindex="0">
+                <img src="./picture/mixer.png" alt="Mixer" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Mixer</h3>
+                        <p class="tile-subtitle">Streaming en vivo</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Ver</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 12 -->
+            <div class="tile tile-4" tabindex="0">
+                <img src="./picture/avatar.jpeg" alt="Avatars" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Avatars</h3>
+                        <p class="tile-subtitle">Personaliza tu avatar</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Editar</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tile 13 -->
+            <div class="tile tile-1" tabindex="0">
+                <img src="./picture/help.jpg" alt="Help" class="tile-image">
+                <div class="tile-content">
+                    <div>
+                        <h3 class="tile-title">Help</h3>
+                        <p class="tile-subtitle">Soporte y ayuda</p>
+                    </div>
+                    <div class="tile-buttons">
+                        <button class="tile-button">Abrir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- Icono Xbox flotante -->
+    <div class="xbox-icon" id="xboxIcon">
+        <i class="fab fa-xbox"></i>
+    </div>
+
+    <!-- Panel estilo Windows 8 -->
+    <div class="win8-panel" id="infoPanel">
+        <div class="panel-header">
+            <h2 class="panel-title">Xbox Information Hub</h2>
+            <button class="close-panel" id="closePanel">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <!-- Item 1 - Fortnite -->
+        <div class="content-item">
+            <div class="media-container">
+                <img src="https://compass-ssl.xbox.com/assets/ed/0d/ed0d0d0d-0d0d-0d0d-0d0d-0d0d0d0d0d0d.jpg" alt="Fortnite">
+            </div>
+            <div class="item-info">
+                <h3 class="item-title">Fortnite Chapter 5</h3>
+                <p class="item-description">
+                    Nuevo mapa, armas y mecánicas de juego. Disfruta del battle royale más popular 
+                    con gráficos mejorados para Xbox Series X|S.
+                </p>
+                <a href="#" class="view-more">Ver más detalles</a>
+            </div>
+        </div>
+        
+        <!-- Item 2 - Video -->
+        <div class="content-item">
+            <div class="media-container">
+                <video autoplay loop muted>
+                    <source src="https://assets.xbox.com/xbc/assets/0b6e4a3e-6e6d-4e3d-8b0a-5b0e9e9e9e9e.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item-info">
+                <h3 class="item-title">Xbox Game Pass Ultimate</h3>
+                <p class="item-description">
+                    Suscríbete y accede a cientos de juegos de alta calidad, incluyendo lanzamientos 
+                    el mismo día de su estreno.
+                </p>
+                <a href="#" class="view-more">Suscribirse ahora</a>
+            </div>
+        </div>
+        
+        <!-- Item 3 - Halo Infinite -->
+        <div class="content-item">
+            <div class="media-container">
+                <img src="https://compass-ssl.xbox.com/assets/5a/3b/5a3b3b3b-3b3b-3b3b-3b3b-3b3b3b3b3b3b.jpg" alt="Halo Infinite">
+            </div>
+            <div class="item-info">
+                <h3 class="item-title">Halo Infinite</h3>
+                <p class="item-description">
+                    La última entrega de la saga Halo con modo campaña épico y multijugador gratuito 
+                    con 120fps en Xbox Series X.
+                </p>
+                <a href="#" class="view-more">Comprar ahora</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="panel-overlay" id="panelOverlay"></div>
+
+    <!-- Audio -->
+    <audio id="xboxSound" src="./audio/boton_xbox.mp3"></audio>
+    </section>
+
+    <section>
+          <!-- Efecto blur -->
+    <div class="blur-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Descubre tu siguiente juego favorito</h1>
+        <p>Disfruta de cientos de juegos por un módico precio mensual</p>
+        <a href="#" class="join-btn">ÚNETE AHORA</a>
+    </section>
+
+    <!-- Game Pass Section -->
+    <section class="game-pass-section">
+        <h2 class="section-title">XBOX GAME PASS</h2>
+        
+        <div class="games-grid">
+            <!-- Juego 1 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/5a/3b/5a3b3b3b-3b3b-3b3b-3b3b-3b3b3b3b3b3b.jpg" alt="Fortnite" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">ENHANCED</div>
+                    <h3 class="game-title">Fortnite OG</h3>
+                    <a href="#" class="game-btn">CONSÍGUELO AHORA</a>
+                </div>
+            </div>
+            
+            <!-- Juego 2 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/ed/0d/ed0d0d0d-0d0d-0d0d-0d0d-0d0d0d0d0d0d.jpg" alt="Halo Infinite" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">EXCLUSIVO</div>
+                    <h3 class="game-title">Halo Infinite</h3>
+                    <a href="#" class="game-btn">JUGAR AHORA</a>
+                </div>
+            </div>
+            
+            <!-- Juego 3 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/3f/5c/3f5c5c5c-5c5c-5c5c-5c5c-5c5c5c5c5c5c.jpg" alt="Forza Horizon 5" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">4K UHD</div>
+                    <h3 class="game-title">Forza Horizon 5</h3>
+                    <a href="#" class="game-btn">DESCARGAR</a>
+                </div>
+            </div>
+            
+            <!-- Juego 4 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/2a/4e/2a4e4e4e-4e4e-4e4e-4e4e-4e4e4e4e4e4e.jpg" alt="Starfield" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">NUEVO</div>
+                    <h3 class="game-title">Starfield</h3>
+                    <a href="#" class="game-btn">EXPLORAR</a>
+                </div>
+            </div>
+            
+            <!-- Juego 5 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/7b/6d/7b6d6d6d-6d6d-6d6d-6d6d-6d6d6d6d6d6d.jpg" alt="Gears 5" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">XBOX SERIES X|S</div>
+                    <h3 class="game-title">Gears 5</h3>
+                    <a href="#" class="game-btn">JUGAR</a>
+                </div>
+            </div>
+            
+            <!-- Juego 6 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/9c/2f/9c2f2f2f-2f2f-2f2f-2f2f-2f2f2f2f2f2f.jpg" alt="Sea of Thieves" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">MULTIJUGADOR</div>
+                    <h3 class="game-title">Sea of Thieves</h3>
+                    <a href="#" class="game-btn">NAVEGAR</a>
+                </div>
+            </div>
+            
+            <!-- Juego 7 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/1d/8a/1d8a8a8a-8a8a-8a8a-8a8a-8a8a8a8a8a8a.jpg" alt="Minecraft" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">CLÁSICO</div>
+                    <h3 class="game-title">Minecraft</h3>
+                    <a href="#" class="game-btn">CREAR</a>
+                </div>
+            </div>
+            
+            <!-- Juego 8 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/4e/7c/4e7c7c7c-7c7c-7c7c-7c7c-7c7c7c7c7c7c.jpg" alt="Flight Simulator" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">SIMULADOR</div>
+                    <h3 class="game-title">Flight Simulator</h3>
+                    <a href="#" class="game-btn">VOLAR</a>
+                </div>
+            </div>
+            
+            <!-- Juego 9 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/6f/1b/6f1b1b1b-1b1b-1b1b-1b1b-1b1b1b1b1b1b.jpg" alt="Doom Eternal" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">ACCIÓN</div>
+                    <h3 class="game-title">Doom Eternal</h3>
+                    <a href="#" class="game-btn">DEMOLER</a>
+                </div>
+            </div>
+            
+            <!-- Juego 10 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/8c/3d/8c3d3d3d-3d3d-3d3d-3d3d-3d3d3d3d3d3d.jpg" alt="Elder Scrolls Online" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">MMORPG</div>
+                    <h3 class="game-title">Elder Scrolls Online</h3>
+                    <a href="#" class="game-btn">EXPLORAR</a>
+                </div>
+            </div>
+            
+            <!-- Juego 11 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/5b/9e/5b9e9e9e-9e9e-9e9e-9e9e-9e9e9e9e9e9e.jpg" alt="Fallout 76" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">MUNDO ABIERTO</div>
+                    <h3 class="game-title">Fallout 76</h3>
+                    <a href="#" class="game-btn">AVENTURA</a>
+                </div>
+            </div>
+            
+            <!-- Juego 12 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/7d/2c/7d2c2c2c-2c2c-2c2c-2c2c-2c2c2c2c2c2c.jpg" alt="Psychonauts 2" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">AVENTURA</div>
+                    <h3 class="game-title">Psychonauts 2</h3>
+                    <a href="#" class="game-btn">JUGAR</a>
+                </div>
+            </div>
+            
+            <!-- Juego 13 -->
+            <div class="game-card">
+                <img src="https://compass-ssl.xbox.com/assets/3c/5a/3c5a5a5a-5a5a-5a5a-5a5a-5a5a5a5a5a5a.jpg" alt="Ori and the Will of the Wisps" class="game-image">
+                <div class="game-info">
+                    <div class="game-badge">INDIE</div>
+                    <h3 class="game-title">Ori and the Will of the Wisps</h3>
+                    <a href="#" class="game-btn">EXPERIMENTAR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="xbox-footer">
+        <div class="footer-grid">
+            <!-- Columna 1 -->
+            <div class="footer-column">
+                <h3 class="footer-title">Examinar</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#"><i class="fas fa-gamepad"></i> Xbox Consolas</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-dice"></i> Juegos Xbox</a></li>
+                    <li class="footer-link"><a href="#"><i class="fab fa-xbox"></i> Xbox Game Pass</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-headset"></i> Accesorios para Xbox</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 2 -->
+            <div class="footer-column">
+                <h3 class="footer-title">Recursos</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#"><i class="far fa-newspaper"></i> Noticias de Xbox</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-tools"></i> Soporte técnico</a></li>
+                    <li class="footer-link"><a href="#"><i class="far fa-comment"></i> Comentarios</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-users"></i> Estándares de la comunidad</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-shield-alt"></i> Advertencia sobre ataques</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 3 -->
+            <div class="footer-column">
+                <h3 class="footer-title">Microsoft Store</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#"><i class="far fa-user"></i> Cuenta de Microsoft</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-question-circle"></i> Soporte</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-undo"></i> Devoluciones</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-truck"></i> Seguimiento de pedidos</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 4 -->
+            <div class="footer-column">
+                <h3 class="footer-title">Para desarrolladores</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#"><i class="fas fa-code"></i> Juegos</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-laptop-code"></i> ID@Xbox</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-cloud"></i> Servicios Xbox</a></li>
+                    <li class="footer-link"><a href="#"><i class="fas fa-book"></i> Documentación</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2023 Microsoft. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </section>
+
+    
+        <!-- Audio para efectos de sonido -->
+        <audio id="hoverSound" src="./audio/toy-button-105724.mp3"></audio>
+        <audio id="clickSound" src="./audio/toy-button-105724.mp3"></audio>
+
+
+
+        
+    </div>
+</div>
+</div>
+
+
+  
+
+   
+
+
+    
+ 
+
+    <script src="./scripts/js.js"></script>
+</body>
+</html>
